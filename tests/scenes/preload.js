@@ -4,15 +4,14 @@ import Phaser from 'phaser';
 class Preload extends Phaser.Scene {
     constructor() {
         super({key: 'Preload'});
+        console.log("Preload...");
     }
 
     preload(){
-        this.load.image('button', "assets/sprites/button.png");
+    	//LOAD YOUR TEST ASSETS HERE
     }
 
-    create(){
-        this.scene.start('Main');
-    }
+    create(){ this.scene.start('Main') }
 
 }
 
